@@ -1,13 +1,9 @@
-<?php      
-$host = "localhost";  
-$user = "root";  
-$password = '';  
-$db_name = "UCAS";  
+<?php
   
-$con = mysqli_connect($host, $user, $password, $db_name);  
-if(mysqli_connect_errno()) {  
-    die("Failed to connect with MySQL: ". mysqli_connect_error());  
-}  
-?>  
-
-
+        $conn = mysqli_connect("localhost", "root", "", "ucas");
+          
+        // Check connection
+        if($conn === false){
+            die("ERROR: Could not connect. " 
+                . mysqli_connect_error());
+        }
