@@ -1,0 +1,21 @@
+body
+        {
+            background-image: url("/Users/ADMIN/UCAS/graduate.jpg");
+            background-size: 100% 100% 100%;
+            background-repeat: no-repeat;
+            image-resolution: 84 ;
+        }
+        ::placeholder{color: rgb(160, 27, 27);}
+.form-wrap{
+    width:  320px ;
+     background: #3e3d3d;
+      padding: 40px 20px;
+       box-sizing: border-box;
+        position: fixed;
+         left:50%; top: 50%; 
+         transform: translate(-50%, -50%);
+}
+h1{
+    background-color: rgb(202, 191, 191);
+    text-size-adjust: 30;
+}

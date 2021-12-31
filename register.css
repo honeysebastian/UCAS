@@ -1,0 +1,82 @@
+body {
+    background: #ecf1f4;
+    font-family: 'Times New Roman', Times, serif ;
+    color:aqua;
+    font-weight: normal;
+    background-image: url("download.jpg"); 
+    background-repeat: no-repeat;
+    background-image: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    image-resolution: 84;
+
+}
+.registration {
+    box-sizing: content-box;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+   align-items: center;
+    width: 400px;
+    height: 500px;
+    transform: translate(-50%, -50%);
+}
+.registration input{
+    width: 100%;
+    margin-bottom: 20px;
+    top: 50%;
+    left: 50%;
+}
+
+
+input{
+    width: 100%;
+    background: none;
+    border: 1px solid rgb(207, 66, 66);
+    border-radius: 3px;
+    padding: 6px 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgb(158, 75, 75);
+}
+input [type="button"]
+{ 
+    background: red;
+border: 0;
+cursor: pointer;
+color: #3e3d3d;
+}
+
+input [type="submit"]: hover
+
+{background: #a4b15c; transition: .6s;
+    font-size: 16px;
+     font-weight: bold;
+     margin: 20px 0;
+padding: 10px 15px;
+width: 50%;
+border-radius: 5px;
+border: 0;
+text-align: center;
+align-items: center;
+
+}
+ ::placeholder{color: rgb(160, 27, 27);}
+.form-wrap{
+    width:  320px ;
+     background: #3e3d3d;
+      padding: 40px 20px;
+       box-sizing: border-box;
+        position: fixed;
+         left:50%; top: 50%; 
+         transform: translate(-50%, -50%);
+}
+         h1{text-align: center;
+            color: rgb(22, 24, 24);
+              font-weight: normal;
+                 margin-bottom: 20px ;
+                 }

@@ -1,38 +1,27 @@
+<!DOCTYPE html> 
 <html>
     <head>
         <title> Register</title>
+        <link rel="stylesheet" href="register.css">
     </head>
-
-    <style>
-        body
-        {
-            background-image: url("download.jpg");
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            image-resolution: 84 ;
-        }
-    </style>
-
-   <body>
+    <body>
+             
     <br><br><br><br><br> <br><br><br><br><br>
 
-
-    <form align='center' action= "login.php" method="get" style='background-color:rgb(240, 124, 88); opacity:0.75;
-    height: 350px; margin-top: 25px; 
-    margin-left: 500px; margin-right: 500px; ; font-size: 20px;font-weight: 300;border-radius: 20px ;'>
-   
     <br><br><br><br>
     
-    Name&emsp;&nbsp;<input type="text", size="21px" height="18px"><br>
-    Register Number&emsp;&ensp;<input type="number",size="21px" height="18px"><br><br>
-    Username&emsp;&nbsp;<input type="username", size="21px" height="18px"><br><br>
-    Password&emsp;&ensp;<input type="password",size="25px" height="18px"><br><br>
-    Confirm Password&emsp;&ensp;<input type="password",size="25px" height="18px"><br><br>
-    
-
-
-    <button>submit</button>
-    <button>cancel</button>
-    </form>
-   </body>
+        <div class ="registration" >
+            <form text-align="center" method="POST"  action="register.php" align-items="center "  >
+                <h1>  Sign Up </h1>
+                <input type="text" name="name"  placeholder="Enter Name"> 
+                <br><br>
+                <input type="number" name="register" placeholder="Enter Register number"><br><br>
+                <input type="text" name="user" placeholder="Enter Username"><br><br>
+                <input type="password" name="pass"  placeholder="Enter Password"><br><br>
+                <input type="password" name="confirmpass"  placeholder="Enter Confirm Password"><br><br>
+                <button>SIGN UP</button>
+                <br>
+            </form>
+        </div>
+    </body>
 </html>
