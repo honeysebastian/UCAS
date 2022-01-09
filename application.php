@@ -1,46 +1,37 @@
-<?php      
-    include('application_con.php'); 
-    $register_number = $_POST['register'];  
-    $name = $_POST['name']; 
-    $ucollege_name = $_POST['college'];  
-    $programme_name = $_POST['programme'];   
-    $model = $_POST['model']; 
-    $complementarycourse = $_POST['course1'];  
-    $open_course = $_POST['course2']; 
-    $optional_or_vocational_course = $_POST['course3'];  
-    $address = $_POST['address'];   
-    $phno = $_POST['phno']; 
-    $gender = $_POST['gender'];  
-    $course_1 = $_POST['commoncourse']; 
-    $cgpa_1 = $_POST['cgpa'];  
-    $grade_1 = $_POST['grade'];   
-    $course_2 = $_POST['ccommoncourse2'];  
-    $cgpa_2 = $_POST['cgpa'];  
-    $grade_2 = $_POST['grade'];   
-    $course_3 = $_POST['corecourse']; 
-    $cgpa_3 = $_POST['cgpa'];  
-    $grade_3 = $_POST['grade'];   
-    $course_4 = $_POST['complementarycourse'];  
-    $cgpa_4 = $_POST['cgpa'];  
-    $grade_4 = $_POST['grade'];   
-    
-      
-      
-        /*to prevent from mysqli injection  
-        $username = stripcslashes($username);  
-        $password = stripcslashes($password);  
-        $username = mysqli_real_escape_string($con, $username);  
-        $password = mysqli_real_escape_string($con, $password); */ 
-      
-        $sql = "insert into application where (register_number,name,college_name,programme_name,model,complementarycourse,open_course,optional_or_vocational_course,address,phno,gender,course_1,cgpa_1,grade_1,course_2,cgpa_2,grade_2,course_3,cgpa_3,grade_3,course_4,cgpa_4,grade_4  )";  
-        $result = mysqli_query($con, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-        $count = mysqli_num_rows($result);  
-          
-        if($count == 1){  
-            echo "<h1><center> submitted successfully. </center></h1>";  
-        }  
-        else{  
-            echo "<h1> subission failed.</h1>";  
-        }     
-?>  
+<html>
+    <head>
+        <title> application form</title>
+        <link rel="stylesheet" href="application.css">
+    </head>
+
+       <body>
+           <h1 align="center">UNIVERSITY CERTIFICATE ALLOTMENT SYSTEM</h1>
+    <br><br> 
+
+
+            <body>
+        <div class ="application" >
+            <form action="application_con.php" method="post" text-align="center"  align-items="center " >
+                <h2>
+                    APPLICATION FORM
+                </h2>
+                <input type="number" name="register" placeholder="Register number" required autofocus><br><br>
+                <input type="text" name="name"  placeholder="Name" required>&emsp;&emsp;&emsp;<input type="text" name="commoncourse"  placeholder="common course 1" required>&emsp;<input type="number" name="cgpa"  placeholder="CGPA" required>&emsp;<input type="text" name="grade"  placeholder="grade" required><br><br>
+                <input type="text" name="college"  placeholder="College Name" required>&emsp;&emsp;&emsp;<input type="text" name="commoncourse2"  placeholder="common course 2" required>&emsp;<input type="number" name="cgpa"  placeholder="CGPA" required>&emsp;<input type="text" name="grade"  placeholder="grade" required><br><br>
+                <input type="text" name="programme"  placeholder="Name of programme" required>&emsp;&emsp;&emsp;<input type="text" name="corecourse"  placeholder="core course" required>&emsp;<input type="number" name="cgpa"  placeholder="CGPA" required>&emsp;<input type="text" name="grade"  placeholder="grade" required><br><br>
+                <input type="text" name="model" placeholder="Model" required>&emsp;&emsp;&emsp;<input type="text" name="complementary"  placeholder="complementary course" required>&emsp;<input type="number" name="cgpa"  placeholder="CGPA" required>&emsp;<input type="text" name="grade"  placeholder="grade" required><br><br>
+                <input type="text" name="course1" placeholder="Complementary Course" required><br><br>
+                <input type="text" name="course2"  placeholder="Open course " required><br><br>
+                <input type="text" name="course3" placeholder="Optional/vocational course" required><br><br>
+                <input type="text" name="address" placeholder="Address for Communication" required><br><br>
+                <input type="text" name="phno"  placeholder="phone number" pattern="[0-9]+" maxlength="10" minlength="10" required><br><br>
+                <input type="text" name="gender" placeholder="Gender" required><br><br>
+                <br>
+            </form>
+        </div>
+     </body>
+
+    <button>submit</button>
+    </form>
+   </body>
+</html>

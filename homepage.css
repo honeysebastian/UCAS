@@ -1,11 +1,23 @@
 body
         {
-            background-image:url("graduate.jpg");
+            background-image:url("/college.jpg");
             background-size: 100% 100%;
             background-repeat: no-repeat;
            
         }
-        h1{
-            background-color: rgb(124, 110, 110);
+        .top{
+            background-color: rosybrown;
         }
+        h1{
+            background-color: rgb(77, 87, 221);
+            text-align-last: left;
+        }
+        .menu{
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .submenu{
+            text-size-adjust: 20;
+        }
+
         
