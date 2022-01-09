@@ -29,7 +29,8 @@ if (!$con) {
 }
 
 $query="select * from application";
-$l=mysqli_query($conn,$query);
+$l=mysqli_query($con,$query);
+echo "<h1><center>APPLICATION LIST</center></h1>";
 echo "<table border='1'> <tr><td>Register Number</td><td>Name</td><td>College_Name</td><td>Programme_name</td><td>Model</td>
 <td>Complementary_course</td><td>Open_course</td><td>optional/vocational course</td><td>Address</td><td>phno</td><td>Gender</td><td>common course_1</td>
 <td>cgpa</td><td>grade</td><td>common course_2</td><td>cgpa</td><td>grade</td><td>core course</td><td>cgpa</td><td>grade</td><td>complementary course</td><td>cgpa</td><td>grade</td></tr>";
@@ -58,8 +59,8 @@ while($row=mysqli_fetch_array($l)){
     echo "<td>".$row['course_4']."</td>";
     echo "<td>".$row['cgpa_4']."</td>";
     echo "<td>".$row['grade_4']."</td>";
-    echo "<td><a href=accept_application.php?id=".$row['pid'].">ACCEPT</a></td>";
-    echo "<td><a href=reject_application.php?id=".$row['pid'].">REJECT</a></td>";
+    echo "<td><a href=accept_application.php?id=".$row['id'].">ACCEPT</a></td>";
+    echo "<td><a href=reject_application.php?id=".$row['id'].">REJECT</a></td>";
     echo "</tr>";
 }
 echo "</table>";

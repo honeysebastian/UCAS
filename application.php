@@ -11,7 +11,7 @@
 
             <body>
         <div class ="application" >
-            <form action="application_con.php" method="post" text-align="center"  align-items="center " >
+            <form action="application_con.php" method="POST" text-align="center"  align-items="center " >
                 <h2>
                     APPLICATION FORM
                 </h2>

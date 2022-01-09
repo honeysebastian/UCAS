@@ -10,7 +10,7 @@
     <h1><marquee>UNIVERSITY CERTIFICATE ALLOTMENT SYSTEM</marquee></h1>
     <br><br><br><br><br> <br><br>
 
-    <form align='center' action= "userlogin_con.php"  method="post" style=' background-color:rgb(247, 138, 104) ; opacity:0.75;
+    <form align='center' action= "userlogin_con.php"  method="POST" style=' background-color:rgb(247, 138, 104) ; opacity:0.75;
     height: 400px; margin-top: 25px; 
     margin-left: 500px; margin-right: 500px; ; font-size: 20px;font-weight: 300;border-radius: 20px ;'>
          <h2>LOGIN</h2>

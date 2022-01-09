@@ -38,7 +38,7 @@
     
       
       
-        $sql = "INSERT INTO  `application` (`register`,`name`,`college`,`programme`,`model`,`course1`,`course2`,`course3`,`address`,`phno`,`gender`,`commoncourse`, `cgpa`,`grade`,`commoncourse2`,`cgpa`,`grade`,`corecourse`,`cgpa`,`grade`,`complementarycourse`,`cgpa`,`grade`)
+        $sql = "INSERT INTO  `application` (`register_name`,`name`,`college`,`programme`,`model`,`course1`,`course2`,`course3`,`address`,`phno`,`gender`,`commoncourse`, `cgpa`,`grade`,`commoncourse2`,`cgpa`,`grade`,`corecourse`,`cgpa`,`grade`,`complementarycourse`,`cgpa`,`grade`)
         VALUES ('$register_number','$name','$college_name','$programme_name','$model','$complementarycourse','$open_course','$optional_or_vocational_course','$address','$phno','$gender','$course_1','$cgpa_1','$grade_1','$course_2','$cgpa_2','$grade_2','$course_3','$cgpa_3','$grade_3','$course_4','$cgpa_4','$grade_4' )";  
         $result = mysqli_query($conn, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
