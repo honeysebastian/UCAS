@@ -6,7 +6,7 @@
 <body>
     <style>
         body{
-            background-image:url("listimg.jpg");
+            background-image:url("../images/list.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
@@ -15,6 +15,7 @@
         
     </style>
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -31,11 +32,12 @@ if (!$con) {
 $query="select * from application";
 $l=mysqli_query($con,$query);
 echo "<h1><center>APPLICATION LIST</center></h1>";
-echo "<table border='1'> <tr><td>Register Number</td><td>Name</td><td>College_Name</td><td>Programme_name</td><td>Model</td>
+echo "<table border='1'> <tr><td>ID</td><td>Register Number</td><td>Name</td><td>College_Name</td><td>Programme_name</td><td>Model</td>
 <td>Complementary_course</td><td>Open_course</td><td>optional/vocational course</td><td>Address</td><td>phno</td><td>Gender</td><td>common course_1</td>
 <td>cgpa</td><td>grade</td><td>common course_2</td><td>cgpa</td><td>grade</td><td>core course</td><td>cgpa</td><td>grade</td><td>complementary course</td><td>cgpa</td><td>grade</td></tr>";
 while($row=mysqli_fetch_array($l)){
     echo "<tr>";
+    echo "<td>".$row['id']."</td>";
     echo "<td>".$row['register_number']."</td>";
     echo "<td>".$row['name']."</td>";
     echo "<td>".$row['college_name']."</td>";

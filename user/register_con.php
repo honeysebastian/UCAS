@@ -29,6 +29,7 @@
           
         if(mysqli_query($con, $sql)){
             echo "<h3>data stored in a database successfully.</h3>" ;
+            echo "<script>alert('registered successfully')</script>";
             header("location:userlogin.php") ;
   
         } else{

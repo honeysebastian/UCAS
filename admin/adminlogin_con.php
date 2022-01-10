@@ -1,22 +1,22 @@
 <?php
-
+session_start();
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "ucas";
 
-    //Create connection
+    // Create connection
     $con = mysqli_connect($servername, $username, $password, $dbname);
 
     // Check connection
     if (!$con) {
-      die("Connection failed: " . mysqli_connect_error());
+        die("Connection failed: " . mysqli_connect_error());
     }
 
-    $email= $_POST['email'];
+    $username= $_POST['username'];
     $password= $_POST['password'];
 
-    $sql = "SELECT id FROM register WHERE email = '$email' and `password` = '$password'";
+    $sql = "SELECT * FROM adminlogin WHERE username = '$username' and `password` = '$password'";
     $result = mysqli_query($con,$sql);
     
     $count = mysqli_num_rows($result);
@@ -24,11 +24,15 @@
     // If result matched $myusername and $mypassword, table row must be 1 row
       
     if($count == 1) {
-        header("location:userhome.php");
+               header("location:adminhome.php");
     }
     else {
-       echo "invalid username and password";
+        echo '<script>alert("ivalid username or password")</script>';
     }
 
     $con->close();
     ?>
+
+
+
+   
