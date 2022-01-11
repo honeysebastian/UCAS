@@ -20,7 +20,7 @@
     <form align='center' name="f1" action= "./adminlogin_con.php"  method="POST" style='background-color:rgb(211,211,211); opacity:0.75;
     height: 400px; margin-top: 25px; 
     margin-left: 500px; margin-right: 500px; ; font-size: 20px;font-weight: 300;border-radius: 20px ;'>
-    <h1><center>LOGIN</center></h1>
+    <h1><center>ADMIN LOGIN</center></h1>
     <br><br><br>
          <table align="center">
 <tr>

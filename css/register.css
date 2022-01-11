@@ -1,17 +1,10 @@
 body {
-    background: #ecf1f4;
-    font-family: 'Times New Roman', Times, serif ;
-    color:aqua;
-    font-weight: normal;
-    background-image: url("download.jpg"); 
+    background-image: url("../images/college.jpg");
+    background-size:cover;
     background-repeat: no-repeat;
-    background-image: center center;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    position: fixed;
+    image-resolution: 84 ;
     align-items: center;
     text-align: center;
-    image-resolution: 84;
 
 }
 .registration {
@@ -24,47 +17,7 @@ body {
     height: 500px;
     transform: translate(-50%, -50%);
 }
-.registration input{
-    width: 100%;
-    margin-bottom: 20px;
-    top: 50%;
-    left: 50%;
-}
 
-
-input{
-    width: 100%;
-    background: none;
-    border: 1px solid rgb(207, 66, 66);
-    border-radius: 3px;
-    padding: 6px 15px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    font-size: 16px;
-    color: rgb(158, 75, 75);
-}
-input [type="button"]
-{ 
-    background: red;
-border: 0;
-cursor: pointer;
-color: #3e3d3d;
-}
-
-input [type="submit"]: hover
-
-{background: #a4b15c; transition: .6s;
-    font-size: 16px;
-     font-weight: bold;
-     margin: 20px 0;
-padding: 10px 15px;
-width: 50%;
-border-radius: 5px;
-border: 0;
-text-align: center;
-align-items: center;
-
-}
  ::placeholder{color: rgb(160, 27, 27);}
 .form-wrap{
     width:  320px ;

@@ -6,7 +6,7 @@
 
        <body>
            <h1 align="center">UNIVERSITY CERTIFICATE ALLOTMENT SYSTEM</h1>
-    <br><br> 
+    <br>
 
 
             <body>
@@ -40,7 +40,6 @@
                 <input type="text" name="gender" placeholder="Gender" required autofocus><br><br>
                 <button type="submit"  value="submit">SUBMIT</button> 
                 <button type="reset"  value="clear">CLEAR</button>
-                <br>
             </form>
               <button>  <a href="./userhome.php">HOME</a></button>
            </div>
