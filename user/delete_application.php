@@ -13,7 +13,7 @@
     <br>
 REGISTER NUMBER:<input type="text" name="register" ><br><br>
 <button name="submit" value="submit">Submit</button><br><br>
-<button><center>HOME</center><a href="./userhome.php"></a></button>
+<a href="userhome.php">HOME</a>
 </form>
 </body>
 </html>

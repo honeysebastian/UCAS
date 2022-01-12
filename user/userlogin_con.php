@@ -23,11 +23,14 @@ session_start();
     
     // If result matched $myusername and $mypassword, table row must be 1 row
       
-    if($count == 1) {
-        header("location:userhome.php");
+    if($count>0) {
+      $_SESSION['id']=$fetch['id'];
+        header('Location:userhome.php');
     }
     else {
-      echo '<script>alert("ivalid username or password")</script>';
+      $_SESSION['tmp']="invalid username or password!";
+      header('Location:userlogin.php');
+      //echo '<script>alert("ivalid username or password")</script>';
     }
 
     $con->close();

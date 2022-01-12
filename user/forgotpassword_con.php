@@ -18,16 +18,8 @@
         
       
         $sql = "UPDATE register SET `password` = '$password' WHERE `email` = '$email'";
-        $result = mysqli_query($con, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-        $count = mysqli_num_rows($result);  
+        $result = mysqli_query($con, $sql); 
           
-        if($count == 1){  
-            echo "<h1><center> updated successfully </center></h1>";
             header('location:userlogin.php');
-        }
-            
-        else{  
-            echo "<h1> failed.</h1>"; 
-        }     
+
 ?>  

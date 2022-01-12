@@ -68,8 +68,6 @@ while($row=mysqli_fetch_array($l)){
     echo "<td>".$row['course_4']."</td>";
     echo "<td>".$row['cgpa_4']."</td>";
     echo "<td>".$row['grade_4']."</td>";
-    echo "<td><a href=accept_application.php?id=".$row['id'].">ACCEPT</a></td>";
-    echo "<td><a href=reject_application.php?id=".$row['id'].">REJECT</a></td>";
     echo "</tr>";
 }
 echo "</table>";

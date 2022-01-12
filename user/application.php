@@ -16,7 +16,7 @@
                     APPLICATION FORM
                 </h2>
                 <input type="text" name="register" placeholder="Register number" required autofocus><br><br>
-                <input type="text" name="name"  placeholder="Name" required>&emsp;&emsp;&emsp;
+                <input type="text" name="name"  placeholder="Name" pattern="[A-Za-Z]" required>&emsp;&emsp;&emsp;
                 <input type="text" name="commoncourse"  placeholder="common course 1" required>&emsp;
                 <input type="number" name="cgpa"  placeholder="CGPA" required>&emsp;
                 <input type="text" name="grade"  placeholder="grade" required><br><br>
